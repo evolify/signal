@@ -3,7 +3,7 @@ export function createSignal<T>(initialValue: T): [() => T, (v: T) => any] {
   let value = initialValue
   const listeners: Array<Function> = []
   function getter() {
-    if (listener) {
+    if (listener && !listeners.includes(listener)) {
       listeners.push(listener)
     }
     return value
