@@ -53,9 +53,9 @@ You can use it with React, or any javascript.
 
       return (
         <div>
-        <button onClick={increase}>+</button>
-        <span>{count}</span>
-        <button onClick={decrease}>-</button>
+          <button onClick={increase}>+</button>
+            <span>{count}</span>
+          <button onClick={decrease}>-</button>
         </div>
       )
     }
